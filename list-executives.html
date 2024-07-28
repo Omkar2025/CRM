@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="fixed">
+
+<head>
+
+	<!-- Basic -->
+	<meta charset="UTF-8">
+
+	<title>Service Manager</title>
+	<meta name="keywords" content="HTML5 Admin Template" />
+	<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+	<meta name="author" content="okler.net">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- Web Fonts  -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light"
+		rel="stylesheet" type="text/css">
+
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+
+	<!-- Specific Page Vendor CSS -->
+	<link rel="stylesheet" href="assets/vendor/select2/select2.css" />
+	<link rel="stylesheet" href="assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+	<!-- Skin CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+	<!-- Theme Custom CSS -->
+	<link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+	<!-- Head Libs -->
+	<script src="assets/vendor/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<section class="body">
+
+		<!-- start: header -->
+		<header class="header">
+			<div class="logo-container">
+				<a href="../" class="logo">
+					<img src="assets/images/logo.png" height="35" alt="Porto Admin" />
+				</a>
+				<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html"
+					data-fire-event="sidebar-left-opened">
+					<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				</div>
+			</div>
+
+			<!-- start: search & user box -->
+			<div class="header-right">
+				<span class="separator"></span>
+
+				<div id="userbox" class="userbox">
+					<a href="#" data-toggle="dropdown">
+						<figure class="profile-picture">
+							<img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle"
+								data-lock-picture="assets/images/!logged-user.jpg" />
+						</figure>
+						<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+							<span class="name">Amit Singh</span>
+							<span class="role">Administrator</span>
+						</div>
+
+						<i class="fa custom-caret"></i>
+					</a>
+
+					<div class="dropdown-menu">
+						<ul class="list-unstyled">
+							<li class="divider"></li>
+							<li>
+								<a role="menuitem" tabindex="-1" href="pages-signin.html"><i
+										class="fa fa-power-off"></i> Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end: search & user box -->
+		</header>
+		<!-- end: header -->
+
+		<div class="inner-wrapper">
+			<!-- start: sidebar -->
+			<aside id="sidebar-left" class="sidebar-left">
+
+				<div class="sidebar-header">
+					<div class="sidebar-title">
+						Navigation
+					</div>
+					<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html"
+						data-fire-event="sidebar-left-toggle">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+
+				<div class="nano">
+					<div class="nano-content">
+						<nav id="menu" class="nav-main" role="navigation">
+							<ul class="nav nav-main">
+								<li>
+									<a href="admin.html">
+										<i class="fa fa-home" aria-hidden="true"></i>
+										<span>Dashboard</span>
+									</a>
+								</li>
+								<li>
+									<a href="list-products.html">
+										<span class="pull-right label label-primary">12</span>
+										<i class="fa fa-cubes" aria-hidden="true"></i>
+										<span>Products</span>
+									</a>
+								</li>
+								<li>
+									<a href="list-customers.html">
+										<span class="pull-right label label-primary">20</span>
+										<i class="fa fa-users" aria-hidden="true"></i>
+										<span>Customers</span>
+									</a>
+								</li>
+								<li>
+									<a href="list-executives.html">
+										<span class="pull-right label label-primary">5</span>
+										<i class="fa fa-headphones" aria-hidden="true"></i>
+										<span>Executives</span>
+									</a>
+								</li>
+								<li>
+									<a href="list-executives.html">
+										<span class="pull-right label label-primary">10</span>
+										<i class="fa fa-wrench" aria-hidden="true"></i>
+										<span>Service Technician</span>
+									</a>
+								</li>
+								<li class="nav-parent">
+									<a>
+										<i class="fa fa-files-o" aria-hidden="true"></i>
+										<span>Reports</span>
+									</a>
+									<ul class="nav nav-children">
+										<li>
+											<a href="reports.html">
+												 Requests Report
+											</a>
+										</li>
+										<li>
+											<a href="reports.html">
+												 Customer Report
+											</a>
+										</li>
+										<li>
+											<a href="reports.html">
+												 Technician Report
+											</a>
+										</li>
+										<li>
+											<a href="reports.html">
+												 Product Report
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+			</aside>
+			<!-- end: sidebar -->
+
+			<section role="main" class="content-body">
+				<header class="page-header">
+					<h2>Executives</h2>
+				</header>
+
+				<!-- start: page -->
+				<section class="panel">
+					<header class="panel-heading">
+
+						<h2 class="panel-title">Executives</h2>
+					</header>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="mb-md">
+									<button id="addToTable" class="btn btn-primary">Add New Executive <i
+											class="fa fa-plus"></i></button>
+								</div>
+							</div>
+						</div>
+						<table class="table table-bordered table-striped mb-none" id="datatable-editable">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Address</th>
+									<th>Contact Number</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="gradeX">
+									<td>John Doe</td>
+									<td>123 Elm Street, Springfield, IL 62704</td>
+									<td>+1-555-123-4567</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+								<tr class="gradeC">
+									<td>Jane Smith</td>
+									<td>456 Oak Avenue, Rivertown, CA 90210</td>
+									<td>+1-555-234-5678</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+								<tr class="gradeA">
+									<td>Alice Johnson</td>
+									<td>789 Maple Drive, Lakeside, TX 75001</td>
+									<td>+1-555-345-6789</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+								<tr class="gradeA">
+									<td>Bob Brown</td>
+									<td>321 Pine Lane, Forest City, WA 98001</td>
+									<td>+1-555-456-7890</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+								<tr class="gradeA">
+									<td>Charlie Davis</td>
+									<td>654 Cedar Street, Hilltop, CO 80012</td>
+									<td>+1-555-567-8901</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+								<tr class="gradeA">
+									<td>Emily Evans</td>
+									<td>987 Birch Road, Meadowville, FL 33101</td>
+									<td>+1-555-678-9012</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+								<tr class="gradeA">
+									<td>Frank Green</td>
+									<td>147 Walnut Way, Riverbend, OR 97035</td>
+									<td>+1-555-789-0123</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+								<tr class="gradeA">
+									<td>Grace Harris</td>
+									<td>258 Chestnut Blvd, Seaside, NY 10001</td>
+									<td>+1-555-890-1234</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+								<tr class="gradeA">
+									<td>Henry Hill</td>
+									<td>369 Poplar Street, Mountainview, AZ 85001</td>
+									<td>+1-555-901-2345</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+								<tr class="gradeA">
+									<td>Isabella Scott</td>
+									<td>741 Spruce Avenue, Baytown, NJ 07001</td>
+									<td>+1-555-012-3456</td>
+									<td class="actions">
+										<a href="#" class="hidden on-editing save-row"><i class="fa fa-save"></i></a>
+										<a href="#" class="hidden on-editing cancel-row"><i class="fa fa-times"></i></a>
+										<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+										<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<!-- end: page -->
+			</section>
+		</div>
+	</section>
+
+	<div id="dialog" class="modal-block mfp-hide">
+		<section class="panel">
+			<header class="panel-heading">
+				<h2 class="panel-title">Are you sure?</h2>
+			</header>
+			<div class="panel-body">
+				<div class="modal-wrapper">
+					<div class="modal-text">
+						<p>Are you sure that you want to delete this row?</p>
+					</div>
+				</div>
+			</div>
+			<footer class="panel-footer">
+				<div class="row">
+					<div class="col-md-12 text-right">
+						<button id="dialogConfirm" class="btn btn-primary">Confirm</button>
+						<button id="dialogCancel" class="btn btn-default">Cancel</button>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</div>
+
+	<!-- Vendor -->
+	<script src="assets/vendor/jquery/jquery.js"></script>
+	<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+	<script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+	<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+	<script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+	<!-- Specific Page Vendor -->
+	<script src="assets/vendor/select2/select2.js"></script>
+	<script src="assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+	<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+
+	<!-- Theme Base, Components and Settings -->
+	<script src="assets/javascripts/theme.js"></script>
+
+	<!-- Theme Custom -->
+	<script src="assets/javascripts/theme.custom.js"></script>
+
+	<!-- Theme Initialization Files -->
+	<script src="assets/javascripts/theme.init.js"></script>
+
+
+	<!-- Examples -->
+	<script src="assets/javascripts/tables/examples.datatables.editable.js"></script>
+</body>
+
+</html>
