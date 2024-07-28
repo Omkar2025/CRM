@@ -32,23 +32,6 @@
 
 		<!-- Head Libs -->
 		<script src="assets/vendor/modernizr/modernizr.js"></script>
-		<script>
-			function myFunction() {
-				var f = document.getElementById("username").value;
-				if(f == "admin") {
-					alert("Inside admin");
-				//window.location.replace("admin.html");
-				window.location.replace('https://www.google.com');
-				//window.location = "admin.html";
-				} else if (f == "executive") {
-				window.location.replace("executive.html");
-				} else if (f == "technician") {
-				window.location.replace("technician.html");
-				} else {
-				alert("Try username as admin, executive or technician");
-				}
-			}
-			</script>
 	</head>
 	<body>
 		<!-- start: page -->
@@ -91,15 +74,10 @@
 							</div>
 
 							<div class="row">
-								<div class="col-sm-8">
-									<div class="checkbox-custom checkbox-default">
-										<input id="RememberMe" name="rememberme" type="checkbox"/>
-										<label for="RememberMe">Remember Me</label>
-									</div>
-								</div>
-								<div class="col-sm-4 text-right">
-									<button onclick="myFunction();" class="btn btn-primary hidden-xs">Sign In</button>
-									<button onclick="myFunction();" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Sign In</button>
+								<div class="mb-lg text-center">
+									<a class="btn btn-facebook mb-md ml-xs mr-xs" href="admin.html">Admin </a>
+									<a class="btn btn-facebook mb-md ml-xs mr-xs" href="executive.html">Executive</a>
+									<a class="btn btn-facebook mb-md ml-xs mr-xs" href="technician.html">Technician</a>
 								</div>
 							</div>
 
